@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+.mobile-menu{
+    width: 100%;
+    height: 100vh;
+    padding: var(--m-3xs) var(--m-6xs);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile-menu ul{
+    list-style: none;
+}
+.mobile-menu .title{
+    font-weight: var(--font-extra-bold);
+}
+.mobile-menu li, .mobile-menu .title{
+    padding: var(--m-4xs) var(--m-3xs);
+}
+.mobile-menu a{
+    font-weight: var(--font-extra-bold);
+}
+.mobile-menu .divisor{
+    border-top:1px solid var(--very-light-pink);
+}
+.footer{
+    font-weight: var(--font-thin);
+}
+.footer p{
+    padding: var(--m-xs) var(--m-3xs);
+}
+.footer a{
+    color:var(--blue-dark)
+}
+    </style>
+</head>
+<body>
+    <nav class="mobile-menu">
+        <ul>
+            <p class="title">CATEGORIES</p>
+            <li><a href="/">Top picks</a></li>
+            <li><a href="/">PC</a></li>
+            <li><a href="/">PlayStation 5</a></li>
+            <li><a href="/">Xbox One</a></li>
+            <li><a href="/">Nintendo Switch</a></li>
+            <li><a href="/">All platforms</a></li>
+        </ul>
+        <span class="divisor"></span>
+        <ul class="account">
+            <li><a href="/">My orders</a></li>
+            <li><a href="/">My account</a></li>
+        </ul>
+        <div class="footer">
+            <p>your@email.com</p>
+            <p><a href="./">Sing out</a></p>
+        </div>
+    </nav>
+</body>
+</html>

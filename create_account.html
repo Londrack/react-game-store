@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1 - Password</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+        .login{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            place-items: end;
+        }
+        .logo{
+            margin: 84px auto;
+            justify-self: center;
+            display: block;
+            width: 150px;
+        }
+        .form-container{
+            display: grid;
+            height: 100vh;
+            width: 90%;
+            position: relative;
+        }
+        .title{
+            font-size: var(--font-lg);
+            margin-bottom: 8px;
+            text-align: left;
+            margin: 40px 0;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+        .label{
+            font-size: var(--font-sm);
+            font-weight: var(--font-extra-bold);
+            margin-bottom: 4px;
+        }
+        .input{
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            height: 32px;
+            font-size: var(--font-md);
+            padding: 4px 8px;
+        }
+        .button{
+            border-radius: 8px;
+            height: 56px;
+            margin-top: 20px;
+            width: 100%;
+            font-size: var(--font-lg);
+            font-weight: var(--font-semi-bold);
+            cursor: pointer;
+        }
+        .primary-button{
+            background-color: var(--blue-dark);
+            border:none;
+            color:var(--white);
+        }
+
+        .create-button{
+            position: absolute;
+            bottom: 28px;
+            margin-top: 40px;
+        }
+
+        @media (min-width: 600px) {
+            .login{
+                display: grid;
+                place-items: center;
+            }
+            .logo{
+                display: none;
+            }
+            .form-container{
+                width: 340px;
+                height: auto;
+            }
+            .create-button{
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <div>
+                <h1 class="title">My account</h1>
+                <form class="form" action="">
+                    <label class="label" for="name">Your name</label>
+                    <input class="input input-name" type="text" id="name" placeholder="Your Name" />
+                    <label class="label" for="email">Email address</label>
+                    <input class="input input-email" type="email" id="email" placeholder="your@email.com" />
+                    <label class="label" for="password">Password</label>
+                    <input class="input input-password" type="password" id="password" placeholder="*******" />
+                    <input type="submit" class="primary-button button create-button" value="Create account" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

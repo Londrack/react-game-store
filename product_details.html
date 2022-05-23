@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product_details</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+.product-detail{
+    --desktop-width: 500px;
+    --desktop-height: 400px;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    right: 0;
+    -webkit-box-shadow: var(--shadow-middle);
+    box-shadow: var(--shadow-middle);
+}
+.button{
+    border-radius: 8px;
+    height: 56px;
+    margin-top: 20px;
+    font-size: var(--font-lg);
+    font-weight: var(--font-semi-bold);
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:var(--m-3xs);
+}
+.primary-button{
+    background-color: var(--blue-dark);
+    border:none;
+    color:var(--white);
+}
+    .primary-button img{filter: invert(1);}
+
+.close-btn{
+    position: absolute;
+    left: var(--m-3xs);
+    top: var(--m-3xs);
+    z-index: 1;
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: var(--shadow-middle);
+    box-shadow: var(--shadow-middle);
+}
+
+.product-imgs-box{
+    width: 100%;
+    height: var(--desktop-height);
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    overflow: hidden;
+}
+    .product-imgs-box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.product-info{
+    padding: var(--m-9xs);
+}
+    .product-price{
+        font-size: 1.1em;
+        font-weight: var(--font-extra-bold);
+        font-family: var(--font-roboto);
+        padding-bottom: var(--m-xs);
+    }
+    .product-name{
+        font-size: 1.2em;
+        font-weight: var(--font-thin);
+        color:var(--text-grey);
+    }
+    .product-description{
+        color:var(--text-grey);
+        padding: var(--m-4xs) 0;
+    }
+
+@media only screen and (min-width: 768px) {
+    .product-imgs-box{
+        height: var(--desktop-width);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .product-detail{
+        width: var(--desktop-width);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <div class="close-btn">
+            <img src="./assets/icons/icon_close.png" alt="">
+        </div>
+        <div class="product-imgs-box">
+            <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Product">
+        </div>
+        <div class="product-info">
+            <p class="product-price">$ 120,00</p>
+            <p class="product-name">Bike power</p>
+            <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam urna non nibh accumsan, varius scelerisque leo aliquet. Nam ac nibh elementum, cursus justo nec, aliquam diam. Integer tincidunt ligula at dapibus faucibus. Morbi et purus quam. Cras ut dui id urna convallis ornare..</p>
+
+            <button class="button primary-button">
+                <img src="./assets/icons/icon_shopping_cart.svg" alt="Add to cart">
+                Add to cart
+            </button>
+        </div>
+    </aside>
+</body>
+</html>

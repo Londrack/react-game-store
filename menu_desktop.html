@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+        .desktop-menu{
+            width: 120px;
+            -webkit-box-shadow: var(--shadow-middle);
+            box-shadow: var(--shadow-middle);
+            border-radius: var(--radius-sm);
+            padding: var(--m-3xs) var(--m-3xs) var(--m-4xs);
+        }
+        .desktop-menu ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+        .desktop-menu li{
+            text-align: right;
+            padding: var(--m-5xs) var(--m-3xs);
+        }
+        .desktop-menu a{
+            font-weight: var(--font-extra-bold);
+        }
+        .desktop-menu .title a{
+            color: var(--black);
+        }
+        .desktop-menu .singout{
+            border-top:1px solid var(--text-input-field);
+        }
+        .desktop-menu .singout a{
+            color:var(--blue-dark);
+        }
+    </style>
+</head>
+<body>
+    <nav class="desktop-menu">
+        <ul>
+            <li class="title">
+                <a href="/">My orders</a>
+            </li>
+            <li class="title">
+                <a href="/">My account</a>
+            </li>
+            <li class="singout">
+                <a href="/">Sing out</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

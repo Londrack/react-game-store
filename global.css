@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --very-light-pink: #C7C7C7;
+    --text-input-field:#F7F7F7;
+    --text-grey:#272727;
+    --white:#FFF;
+    --black:#000;
+    --blue-dark: #346A92;
+    --blue-light: #5394CC;
+    --yellow: #F2CB1F;
+
+    --shadow-light: 0px 0px 5px -2px rgba(0,0,0,0.5);
+    --shadow-middle: 0px 0px 5px -2px rgba(0,0,0,0.64);
+
+    --font-roboto: 'Roboto', sans-serif;
+
+    --font-sm: 0.8em;
+    --font-md: 1em;
+    --font-lg: 1.3em;
+    --font-xl: 1.5em;
+
+    --font-thin: 300;
+    --font-semi-bold: 500;
+    --font-bold: 600;
+    --font-extra-bold: 800;
+
+    --m-xs: 4px;
+    --m-2xs:calc(var(--m-xs) * 2);
+    --m-3xs:calc(var(--m-xs) * 3);
+    --m-4xs:calc(var(--m-xs) * 4);
+    --m-5xs:calc(var(--m-xs) * 5);
+    --m-6xs:calc(var(--m-xs) * 6);
+    --m-7xs:calc(var(--m-xs) * 7);
+    --m-8xs:calc(var(--m-xs) * 8);
+    --m-9xs:calc(var(--m-xs) * 9);
+    --m-10xs:calc(var(--m-xs) * 10);
+
+    --radius-sm: var(--m-2xs);
+    --radius-md: var(--m-4xs);
+    --radius-lg: var(--m-5xs);
+
+}
+
+* { margin: 0; padding: 0; }
+a { text-decoration: none;}
+a:visited { color: inherit;}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

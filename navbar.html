@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+.navbar-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--m-3xs) var(--m-5xs);
+    -webkit-box-shadow: var(--shadow-middle);
+    box-shadow: var(--shadow-middle);
+}
+    .navbar-box ul{ list-style: none;}
+        .navbar-box ul a{
+            display: block;
+            text-align: center;
+            border:1px solid var(--white);
+            padding: var(--m-xs) var(--m-4xs);
+            border-radius: var(--radius-sm);
+        }
+        .navbar-box ul a:hover, .navbar-box ul a.active{
+            border-color:var(--blue-dark);
+            color:var(--blue-dark);
+        }
+
+.menu-icon{
+    display: block;
+}
+
+.logo{
+    width: 110px;
+    margin-right: 0px;
+}
+
+.navbar-left{ display: flex; }
+    .navbar-left ul{ display: none; }
+        .navbar-left ul li a{ color: var(--very-light-pink)}
+
+    .navbar-shoppincart{ position: relative; }
+        .navbar-shoppincart span{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: var(--yellow);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.7em;
+            font-weight: var(--font-extra-bold);
+            position: absolute;
+            top:-6px;
+            right: -4px;
+        }
+
+.navbar-right .user-info{ display: none; }
+
+@media only screen and (min-width: 992px) {
+    .navbar-box{
+        padding: var(--m-3xs) var(--m-10xs);
+    }
+    .logo{ width: 160px; margin-right: 40px; }
+    .menu-icon{ display: none; }
+
+    .navbar-left ul, .navbar-right ul{
+        display: flex;
+        align-items: center;
+        gap:var(--m-xs);
+    }
+
+    .navbar-right .user-info{
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar-box">
+        <img class="menu-icon" src="./assets/icons/icon_menu.svg" alt="">
+
+        <div class="navbar-left">
+            <img src="./assets/logos/logo_game_store.svg" alt="" class="logo">
+            <ul>
+                <li>
+                    <a class="active" href="/">Top picks</a>
+                </li>
+                <li>
+                    <a href="/">PC</a>
+                </li>
+                <li>
+                    <a href="/">PlayStation 5</a>
+                </li>
+                <li>
+                    <a href="/">Xbox One</a>
+                </li>
+                <li>
+                    <a href="/">Nintendo Switch</a>
+                </li>
+                <li>
+                    <a href="/">All platforms</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+                <li class="user-info">
+                    <a href="/">your@email.com</a>
+                </li>
+                <li class="navbar-shoppincart">
+                    <img src="./assets/icons/icon_shopping_cart_notification.svg" alt="">
+                    <span>99</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

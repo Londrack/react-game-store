@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+        .main-container{
+            display: grid;
+            place-items: center;
+        }
+        .cards-container{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--m-5xs);
+        }
+        .product-img{
+            position: relative;
+        }
+        .product-img:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+        .product-img > div{
+            position: absolute;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+        .product-img > div img{
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+        }
+
+        .product-info{
+            margin-top: var(--m-2xs);
+            display: flex;
+            justify-content: space-between;
+        }
+        .button-add-cart {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            -webkit-box-shadow: var(--shadow-middle);
+            box-shadow: var(--shadow-middle);
+        }
+        .product-price{
+            font-weight: var(--font-extra-bold);
+        }
+        .product-name{
+            font-weight: var(--font-thin);
+            font-size: var(--font-sm);
+        }
+
+        @media only screen and (min-width: 600px) {
+            .cards-container{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .cards-container{
+                grid-template-columns: repeat(4, 1fr);
+                gap: var(--m-6xs);
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .cards-container{
+                grid-template-columns: repeat(5, 1fr);
+                gap: var(--m-7xs);
+            }
+
+            .product-info{
+                margin-top: var(--m-4xs);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <div class="cards-container">
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">
+                    <div>
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Producto" />
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <p class="product-price">$120,00</p>
+                        <p class="product-name">Round shelf</p>
+                    </div>
+                    <div class="button-add-cart">
+                        <img src="./assets/icons/bt_add_to_cart.svg" alt="Add to cart" class="add-cart-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
