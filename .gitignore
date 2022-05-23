@@ -23,7 +23,7 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
-__RAWG.txt
+/__RAWG.txt
 
 packages/react-devtools-core/dist
 packages/react-devtools-extensions/chrome/build
