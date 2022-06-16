@@ -1,0 +1,33 @@
+.cards-container{
+    width: 90%;
+    min-height: 79vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--m5);
+}
+
+
+@media only screen and (min-width: 768px) {
+    .cards-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--m6);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .cards-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--m6);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .cards-container{
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--m7);
+    }
+
+    .product-info{
+        margin-top: var(--m4);
+    }
+}

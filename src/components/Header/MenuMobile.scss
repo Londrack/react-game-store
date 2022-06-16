@@ -1,0 +1,31 @@
+#dropdown-menu-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s;
+    transform: translateX(-100%);
+    top:0;
+    left: 0;
+
+    &.active{ transform: translateX(0);}
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: var(--m5);
+
+        li{
+            a{
+                font-weight: bold;
+            }
+        }
+    }
+
+    .close-btn{
+        position: absolute;
+        top:var(--m5);
+        right:var(--m5);
+        width: var(--m5);
+    }
+}

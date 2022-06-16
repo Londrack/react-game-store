@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+        .login{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            place-items: end;
+        }
+        .logo{
+            margin: 84px auto;
+            justify-self: center;
+            display: block;
+            width: 150px;
+        }
+        .form-container{
+            display: grid;
+            justify-self: center;
+            height: 95vh;
+            width: 90%;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+        .label{
+            font-size: var(--font-sm);
+            font-weight: var(--font-extra-bold);
+            margin-bottom: 4px;
+        }
+        .input{
+            background-color: var(--text-input-field);
+            border: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            height: 32px;
+            font-size: var(--font-md);
+            padding: 4px 8px;
+        }
+        .button{
+            border-radius: 8px;
+            height: 56px;
+            margin-top: 20px;
+            font-size: var(--font-lg);
+            font-weight: var(--font-semi-bold);
+            cursor: pointer;
+        }
+        .primary-button{
+            background-color: var(--blue-100);
+            border:none;
+            color:var(--white);
+        }
+
+        .secundary-button{
+            background-color: var(--white);
+            border:1px solid var(--blue-100);
+            color:var(--blue-100);
+        }
+
+        .singup-button{
+            align-self: end;
+            margin-bottom: 28px;
+        }
+
+        .resend{
+            margin-top: 40px;
+            text-align: center;
+            font-size: var(--font-thin);
+        }
+
+        .resend a{
+            color: var(--blue-100)
+        }
+
+        @media (min-width: 576px) {
+            .login{
+                display: grid;
+                place-items: center;
+            }
+            .logo{
+                display: none;
+            }
+            .form-container{
+                width: 340px;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <div>
+                <img class="logo" src="./assets/logos/logo_game_store.svg" alt="logo">
+                <form class="form" action="">
+                    <label class="label" for="email">Email address</label>
+                    <input class="input input-email" type="email" id="email" placeholder="your@email.com" />
+                    <label class="label" for="password">Password</label>
+                    <input class="input input-password" type="password" id="password" placeholder="*******" />
+                    <input class="primary-button button login-button" type="submit" value="Confirm" />
+                </form>
+                <p class="resend"><a href="./" alt="Resend">Forgot my password</a></p>
+            </div>
+            <button class="secundary-button button singup-button">Sing Up</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@mixin shadow-light(){
+    $shadow-light: 0px 0px 5px -2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: $shadow-light;
+    box-shadow: $shadow-light;
+}
+
+@mixin shadow-middle(){
+    $shadow-middle: 0px 0px 10px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: $shadow-middle;
+    box-shadow: $shadow-middle;
+}
+
+@mixin custom-scrollbar($width, $track-color, $handle-color, $handle-hover){
+    /* width */
+    ::-webkit-scrollbar {
+        width: $width;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: $track-color;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $handle-color;
+        z-index: 0;
+        border-radius: 12px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: $handle-hover;
+    }
+}

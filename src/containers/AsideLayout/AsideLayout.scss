@@ -1,0 +1,18 @@
+@use '../../styles/mixins' as mixins;
+
+.aside-box{
+    width: 100%;
+    transition: all 0.5s;
+    @include mixins.shadow-middle();
+    transform: translateX(102%);
+
+    &.active{
+        transform: translateX(0%);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .aside-box{
+        width: 500px;
+    }
+}

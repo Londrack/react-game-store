@@ -1,0 +1,23 @@
+.CenterLayout{
+    min-height: 82vh;
+
+    .form-container{
+        display: grid;
+        flex-direction: auto 1fr auto;
+        width: 90%;
+
+        .logo{
+            justify-self: center;
+            display: block;
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .CenterLayout{
+        .form-container{
+            width: 380px;
+        }
+    }
+}

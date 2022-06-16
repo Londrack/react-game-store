@@ -1,0 +1,97 @@
+$font-families: (
+    "roboto": "'Roboto', sans-serif",
+);
+
+$colors: (
+    "white":            #FFF,
+    "white-75per":      rgba(255,255,255,0.75),
+    "white-50per":      rgba(255,255,255,0.5),
+    "white-25per":      rgba(255,255,255,0.25),
+    "black":            #000,
+    "black-75per":      rgba(0,0,0,0.75),
+    "black-50per":      rgba(0,0,0,0.5),
+    "black-25per":      rgba(0,0,0,0.25),
+    "red":              #fc616b,
+    "green":            #6dc849,
+    "yellow-100":       #F2CB1F,
+    "yellow-200":       #fdca52,
+    "blue-100":         #346A92,
+    "blue-200":         #5394CC,
+    "grey-100":         rgb(21, 21, 21),
+    "grey-100-75per":   rgba(21,21,21,0.75),
+    "grey-100-50per":   rgba(21,21,21,0.5),
+    "grey-100-25per":   rgba(21,21,21,0.25),
+    "grey-200":         rgb(32, 32, 32),
+    "grey-200-75per":   rgba(32, 32, 32,0.75),
+    "grey-200-50per":   rgba(32, 32, 32,0.5),
+    "grey-200-25per":   rgba(32, 32, 32,0.25),
+    "grey-300":         #666D79,
+    "grey-400":         #C7C7C7,
+    "transparent":      rgba(0,0,0,0.0),
+);
+
+$standard-space: 4px;
+
+@function md($s: 1) {
+    @return $standard-space * $s;
+}
+
+$radius-sizes: (
+    "xs": md(1),
+    "sm": md(2),
+    "md": md(4),
+    "lg": md(5),
+    "full": 50%
+);
+
+$font-sizes: (
+    "sm": 0.85em,
+    "md": 1em,
+    "lg": 1.3em,
+    "xl": 1.5em,
+);
+
+$font-weights: (
+    "thin": 300,
+    "regular": 400,
+    "semi-bold": 500,
+    "bold": 600,
+    "extra-bold": 800,
+);
+
+$text-option: (
+    "center":   "center",
+    "left":     "left",
+    "right":    "right",
+);
+
+$break-points: (
+    "sm":   "576px",
+    "md":   "768px",
+    "lg":   "992px",
+    "xl":   "1200px",
+);
+
+$percents:(
+    "0":        "0%",
+    "1_5":      "20%",
+    "2_5":      "40%",
+    "3_5":      "60%",
+    "4_5":      "80%",
+    "1_2":      "50%",
+    "full":     "100%",
+);
+
+$sizes:(
+    "15":       md(15),
+    "20":       md(20),
+    "25":       md(25),
+    "30":       md(30),
+    "35":       md(35),
+    "40":       md(40),
+    "45":       md(45),
+    "50":       md(50),
+    "screen-h": "100vh",
+    "screen-w": "100vw",
+);
+

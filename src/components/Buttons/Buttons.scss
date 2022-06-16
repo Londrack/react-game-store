@@ -1,0 +1,39 @@
+.button{
+    border-radius: 8px;
+    height: 56px;
+    margin-top: 20px;
+    font-size: var(--font-lg);
+    font-weight: var(--font-semi-bold);
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:var(--m-3xs);
+
+    &.primary-button{
+        background-color: var(--blue-100);
+        border:none;
+        color:var(--white);
+
+        &:hover{ background-color: var(--blue-200); }
+
+        & img{
+            filter: invert(1);
+        }
+    }
+
+    &.secondary-button{
+        background-color: var(--grey-100);
+        border:1px solid var(--blue-200);
+        color:var(--blue-200);
+
+        &:hover{ background-color: var(--grey-200); }
+    }
+
+    &.tertiary-button{
+        background-color: transparent;
+        border:1px solid var(--yellow-100);
+        color:var(--yellow-100);
+    }
+}

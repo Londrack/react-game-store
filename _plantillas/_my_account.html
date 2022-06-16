@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my_account</title>
+    <link rel="stylesheet" href="./global.css">
+    <style>
+        .login{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            place-items: end;
+        }
+        .logo{
+            margin: 84px auto;
+            justify-self: center;
+            display: block;
+            width: 150px;
+        }
+        .form-container{
+            display: grid;
+            height: 100vh;
+            width: 90%;
+            position: relative;
+        }
+        .title{
+            font-size: var(--font-lg);
+            font-weight: var(--font-extra-bold);
+            margin-bottom: 8px;
+            text-align: left;
+            margin: 40px 0;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+        .label{
+            font-size: var(--font-sm);
+            font-weight: var(--font-extra-bold);
+            margin-bottom: 4px;
+        }
+        .text-label{
+            margin-bottom: 20px;
+            height: 32px;
+            font-size: var(--font-md);
+            padding: 4px 8px;
+        }
+        .button{
+            border-radius: 8px;
+            height: 56px;
+            margin-top: 20px;
+            width: 100%;
+            font-size: var(--font-lg);
+            font-weight: var(--font-semi-bold);
+            cursor: pointer;
+        }
+        .secundary-button{
+            background-color: var(--white);
+            border:1px solid var(--blue-100);
+            color:var(--blue-100);
+        }
+        .primary-button{
+            background-color: var(--blue-100);
+            border:none;
+            color:var(--white);
+        }
+
+        .my-account-button{
+            position: absolute;
+            bottom: 28px;
+            margin-top: 40px;
+        }
+
+        @media (min-width: 576px) {
+            .login{
+                display: grid;
+                place-items: center;
+            }
+            .logo{
+                display: none;
+            }
+            .form-container{
+                width: 340px;
+                height: auto;
+            }
+            .my-account-button{
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+            <div>
+                <h1 class="title">My account</h1>
+                <form class="form" action="">
+                    <label class="label" for="name">Your name</label>
+                    <p class="text-label">Your Name</p>
+                    <label class="label" for="email">Email address</label>
+                    <p class="text-label">your@email.com</p>
+                    <label class="label" for="password">Password</label>
+                    <p class="text-label">*******</p>
+                    <input type="submit" class="secundary-button button my-account-button" value="Edit" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
