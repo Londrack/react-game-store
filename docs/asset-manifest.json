@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff8db37f.css",
+    "main.js": "/static/js/main.bea2f84d.js",
+    "static/media/logo_game_store.svg": "/static/media/logo_game_store.cf39965d76340883de07332988ba894d.svg",
+    "static/media/404.svg": "/static/media/404.de70b193cf4a1307f7acb19fb13e7ac2.svg",
+    "static/media/icon_shopping_cart.svg": "/static/media/icon_shopping_cart.cc60b3c1521c11bbf86d6549a1c1f008.svg",
+    "static/media/bt_add_to_cart.svg": "/static/media/bt_add_to_cart.a5f5eda3c59ca2bb9625bafeae7ad179.svg",
+    "index.html": "/index.html",
+    "static/media/email.svg": "/static/media/email.711b6a45ee8534608858bb894f64be00.svg",
+    "static/media/icon_menu.svg": "/static/media/icon_menu.f50bf6b9c1d7fe15b1b82511c7467ff6.svg",
+    "main.ff8db37f.css.map": "/static/css/main.ff8db37f.css.map",
+    "main.bea2f84d.js.map": "/static/js/main.bea2f84d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff8db37f.css",
+    "static/js/main.bea2f84d.js"
+  ]
+}
