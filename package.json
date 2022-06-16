@@ -27,6 +27,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -b main -d build",
     "postdeploy": "ren build docs",
+
     "gitdeploy": "git commit -am",
     "pregitdeploy": "git add .",
     "postgitdeploy": "git push origin -f main"
